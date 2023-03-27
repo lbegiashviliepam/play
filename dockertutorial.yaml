@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: tutorial
 spec:
+  replicas: 2
   ports:
   - name: 8880-tcp
     port: 80
