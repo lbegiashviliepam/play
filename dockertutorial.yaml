@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: tutorial
 spec:
-  replicas: 2
   ports:
   - name: 8880-tcp
     port: 80
@@ -23,7 +22,7 @@ metadata:
     com.docker.project: tutorial
   name: tutorial
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       com.docker.project: tutorial
